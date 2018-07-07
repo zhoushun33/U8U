@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 fgfhghhgv
+=======
+rftdr
+>>>>>>> f95fcc33e71e54032d3d3f0743dfd69655d3fc00
