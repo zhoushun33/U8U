@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>U8U</title>
+	</head>
+	<link href="css/index.css" rel="stylesheet" type="text/css" />
+	<body>
+		<div id="u1_div">
+			<!--左边导航栏-->
+			<div class="u2_div">
+				<!--头像用户信息-->
+				<img class="img " id="u2_img" src="image/个人账号头像_昵称_u131.jpg">
+				<div class="u5_left">
+					<p>账户身份信息</p>
+				</div>
+				<!--左边二级菜单-->
+				<div class="u6_left" id="left_div">
+					<!--在此写左边二级菜单-->
+				</div>
+			</div>
+			<!--顶部导航栏-->
+			<div class="u2-two">
+				<div class="u3_div"></div>
+				<div class="ux40">
+					<button class="but_top" id="gsxtgl" onclick="choose(this.id)">公司系统管理</button>
+					<button class="but-top2" id="gsjcfw" onclick="choose(this.id)">公司基础设置</button>
+					<button class="but-top2">产品中心</button>
+					<button class="but-top2">友商管理</button>
+					<button class="but-top2">价格中心</button>
+					<button class="but-top2">促销管理</button>
+					<button class="but-top2">订单中心</button>
+					<button class="but-top2">费用管理</button>
+					<button class="but-top2">OA</button>
+					<button class="but-top2">工作聊天</button>
+					<button class="but-u8u">u8u商城</button>
+				</div>
+				<div class="ux40">
+					<button class="but_top">财务中心</button>
+					<button class="but-top2">功能A</button>
+					<button class="but-top2">功能B</button>
+					<button class="but-top2">功能C</button>
+				</div>
+				<div class="u4_div"></div>
+				<div class="u7_div"></div>
+				<div class="u8_div">
+					<!--主要内容-->
+					<iframe src=""></iframe>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	function choose(id){
+		if(id=="gsxtgl"){
+			var ldiv = document.getElementById("left_div");
+			ldiv.innerHTML="";
+			var ul = document.createElement("ul");
+			var li = document.createElement("li");
+			li.innerHTML="系统管理";
+			ul.appendChild(li);
+			ldiv.appendChild(li);
+		}else{
+			var ldiv = document.getElementById("left_div");
+			ldiv.innerHTML="";
+			var ul = document.createElement("ul");
+			var li = document.createElement("li");
+			li.innerHTML="公司基础服务";
+			ul.appendChild(li);
+			ldiv.appendChild(li);
+		}
+	}
+</script>
