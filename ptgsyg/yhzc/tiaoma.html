@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<style type="text/css">
+			body {
+				padding: 0px;
+				margin: 0px;
+				font-size: 12px;
+			}
+			
+			body a {
+				color: #03515d;
+				text-decoration: none;
+			}
+			
+			body button {
+				color: #03515d;
+			}
+			
+			body span {
+				color: #03515d;
+			}
+			
+			.center_bottom input {
+				color: #03515d;
+				font-size: 12px;
+				height: 20px;
+				width: 40px;
+				padding: 2px;
+				vertical-align: middle;
+				text-align: center;
+				margin-bottom: 6px;
+			}
+			/**************************布局部分********************/
+			
+			.table_div {
+				width: 1000px;
+				padding: 10px;
+				margin: 0 auto;
+			}
+			
+			.div_clear {
+				clear: both;
+			}
+			
+			.left_top {
+				background: url("./tab/images/tab_03.gif");
+				height: 30px;
+				width: 12px;
+				float: left;
+			}
+			
+			.left_center {
+				background: url("./tab/images/tab_12.gif");
+				height: 400px;
+				width: 12px;
+				float: left;
+			}
+			
+			.left_bottom {
+				background: url("./tab/images/tab_18.gif");
+				height: 35px;
+				width: 12px;
+				float: left;
+			}
+			
+			.center_top {
+				background: url("./tab/images/tab_05.gif") repeat-x;
+				height: 30px;
+				line-height: 30px;
+				width: 900px;
+				float: left;
+			}
+			
+			.center_center {
+				height: 400px;
+				width: 900px;
+				float: left;
+			}
+			
+			.center_bottom {
+				background: url("./tab/images/tab_19.gif") repeat-x;
+				height: 35px;
+				width: 900px;
+				float: left;
+				line-height: 35px;
+			}
+			
+			.right_top {
+				background: url("./tab/images/tab_07.gif");
+				height: 30px;
+				width: 15px;
+				float: left;
+			}
+			
+			.right_center {
+				background: url("./tab/images/tab_15.gif");
+				height: 400px;
+				width: 15px;
+				float: left;
+			}
+			
+			.right_bottom {
+				background: url("./tab/images/tab_20.gif");
+				height: 35px;
+				width: 15px;
+				float: left;
+			}
+			/**************************************表格内容***********************************/
+			
+			.table_content {
+				margin: 5px;
+				border: 1px solid #B5D6E6;
+				width: 890px;
+				height: 390px;
+				overflow-x: hidden;
+				overflow-y: auto;
+			}
+			
+			.table_content table {
+				width: 100%;
+				border: 0;
+				border-collapse: collapse;
+				font-size: 12px;
+			}
+			
+			.table_content table tr:hover {
+				background-color: #C1EBFF;
+			}
+			
+			.table_content table th {
+				border-collapse: collapse;
+				height: 22px;
+				background: url("./tab/images/bg.gif");
+				border-right: 1px solid #B5D6E6;
+				border-bottom: 1px solid #B5D6E6;
+			}
+			
+			.table_content table td {
+				height: 22px;
+				word-wrap: break-word;
+				max-width: 200px;
+				text-align: center;
+				vertical-align: middle;
+				border-right: 1px solid #B5D6E6;
+				border-bottom: 1px solid #B5D6E6;
+			}
+			
+			.query {
+				margin-left: 80px;
+			}
+			
+			button {
+				color: #444444;
+				background: #F3F3F3;
+				border: 1px #DADADA solid;
+				padding: 5px 10px;
+				border-radius: 2px;
+				font-weight: bold;
+				font-size: 9pt;
+				outline: none;
+			}
+			
+			button:hover {
+				border: 1px #C6C6C6 solid;
+				box-shadow: 1px 1px 1px #EAEAEA;
+				color: white;
+				background: black;
+			}
+			
+			span {
+				margin-left: 10px;
+			}
+			
+		</style>
+
+	</head>
+
+	<body> 
+		<div class="table_div">    <!--还差条码表值，条码名称，顺序完整字符串值，值含义，条码图。-->
+			<div class="div_clear">
+				<div class="left_top"></div>
+				<div class="center_top">
+					<div style="float:left">
+						<span style="font-weight:bold" class="zhubi">条码管理表</span>
+						<a class="query">查询条码类型名称：</a><input placeholder="请输入条码类型名称"></br>
+					</div>
+					<div style="float:right;padding-right:13px">
+						<button>添加</button>
+						<button>保存</button>
+					</div>
+				</div>
+				<div class="right_top"></div>
+			</div>
+			
+			
+			<div class="div_clear" di="biao1">
+				<div class="center_center">
+					<div class="table_content">
+						<table cellspacing="0px" cellpadding="0px">
+							<thead >
+								<tr height="50px">
+									<th width="12%">条码类型名称</th>
+									<th width="12%">条码类型</th>
+									<th width="12%">条码适用范围</th>
+									<th width="12%">法定条码长度</th>
+									<th width="12%">条码合法字符范围</th>
+									<th width="12%">条码字符串分段</th>
+									<th width="12%">条码字符串分段位置含义</th>
+									<th wdith="16%" style="border-right:none">操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td width="12%">ff</td>
+									<td width="12%">ff</td>
+									<td width="12%">f</td>
+									<td width="12%">fe</td>
+									<td width="12%">ew</td>
+									<td width="12%">fe</td>
+									<td width="12%">ew</td>
+									<td width="16%" style="border-right:none">
+										<button>修改</button>
+										<button>删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td width="12%">ff</td>
+									<td width="12%">ff</td>
+									<td width="12%">f</td>
+									<td width="12%">fe</td>
+									<td width="12%">fe</td>
+									<td width="12%">ew</td>
+									<td width="12%">ew</td>
+									<td width="16%" style="border-right:none">
+										<button>修改</button>
+										<button>删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td width="12%">ff</td>
+									<td width="12%">ff</td>
+									<td width="12%">f</td>
+									<td width="12%">fe</td>
+									<td width="12%">ew</td>
+									<td width="12%">fe</td>
+									<td width="12%">ew</td>
+									<td width="16%" style="border-right:none">
+										<button>修改</button>
+										<button>删除</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="right_center"></div>
+			</div>
+			
+			
+			<div class="div_clear">
+				<div class="left_bottom"></div>
+				<div class="center_bottom">
+					<span>&nbsp;&nbsp;共有 3 条记录，当前第 1/1 页</span>
+					<div style="float:right;padding-right:30px">
+						<input type="button" value="首页" />
+						<input type="button" value="上页" />
+						<input type="button" value="下页" />
+						<input type="button" value="尾页" />
+						<span>跳转到</span>
+						<input type="text" size="1" />
+						<input type="button" value="跳转" />
+					</div>
+				</div>
+				<div class="right_bottom"></div>
+			</div>
+		</div>
+	</body>
+
+</html>
