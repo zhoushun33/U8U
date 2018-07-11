@@ -1,0 +1,120 @@
+body{
+	background-color:wheat;
+	line-height: 35px;
+}
+th{
+	text-align: center;
+	width: 220px;
+	height: 80px;
+	font-size: 14px;
+}
+
+td{
+	text-align: center;
+	width: 220px;
+	height: 80px;
+	font-size: 14px;
+}
+tr:hover {
+	background-color: burlywood;
+}
+th:hover {
+	background-color: greenyellow;
+}
+
+td:hover {
+	background-color: red;
+}
+#kj1{
+	position: absolute;
+	left: 200px;
+	top: 500px;
+	width: 80%;
+	height: 100px;
+	text-align: center;
+	vertical-align:middle;  
+	background-color: ghostwhite;
+	
+}
+#kj2{
+	position: absolute;
+	left: 200px;
+	top: 600px;
+	width: 80%;
+	height: 400px;
+	background-color: gainsboro;
+}
+.u1_div{
+	position: absolute;
+	left: 100px;
+	top: 50px;
+	width: 80%;
+
+	
+}
+h2{
+	position: absolute;
+	top: 20px;
+	left: 500px;
+	color: greenyellow;
+}
+#kj3{
+	position: absolute;
+	left: 200px;
+	top: 0px;
+	width: 80%;
+	height: 100px;
+	text-align: center;
+	vertical-align:middle;  
+	background-color: ghostwhite;
+	
+}
+#kj4{
+	position: absolute;
+	left: 200px;
+	top: 100px;
+	width: 80%;
+	height: 400px;
+	background-color: blanchedalmond;
+}
+#srjz{
+	width: 100px;
+}
+p{
+	font-size: 14px;
+}
+.u2_div{
+	position: absolute;
+	left: 350px;
+	top: 30px;
+}
+.u3_div{
+	position: absolute;
+	left: 350px;
+	top: 75px;
+}
+.u4_div{
+	position: absolute;
+	right: 500px;
+	top:320px;
+}
+button:hover{
+	background-color: red;
+	color: white;
+}
+.u5_div{
+	position: absolute;
+	right: 200px;
+	top: -10px;
+}
+.u6_div{
+	position: absolute;
+	right:70px;
+	top: -10px;
+}
+.u7_div{
+	position: absolute;
+	right:300px;
+	top: -10px;
+}
+
