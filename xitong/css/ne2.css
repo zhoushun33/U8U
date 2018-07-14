@@ -1,0 +1,71 @@
+#kj1{
+	position: absolute;
+	left: 200px;
+	top: 0px;
+	width: 80%;
+	height: 80px;
+	background-color: whitesmoke;
+}
+#kj2{
+	position: absolute;
+	left: 200px;
+	top: 80px;
+	width: 80%;
+	height: 300px;
+	background-color:gainsboro;
+}
+
+.u1_div{
+	position: absolute;
+	left: 10px;
+	top: 0px;
+}
+.u2_div{
+	text-align: center;
+}
+.u3_div{
+	position: absolute;
+	right: 10px;
+	top: 0px;
+}
+.u4_div{
+	position: absolute;
+	left: 20px;
+	top: 10px;
+	
+}
+.u5_div{
+	position: absolute;
+	left: 550px;
+	top: 20px;
+	
+}
+.u6_div{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	
+}
+.u7_div{
+	position: absolute;
+	left: 20px;
+	top: 100px;
+	
+}
+.u8_div{
+	position: absolute;
+	left: 550px;
+	top: 100px;
+}
+.u9_div{
+	position: absolute;
+	right: 20px;
+	top: 100px;
+	
+}
+.u10_div{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	width: 50%;
+}

@@ -1,0 +1,85 @@
+	body {
+		background-color: wheat;
+	}
+	
+	.u1_div {
+		position: absolute;
+		left: 150px;
+		top: 110px;
+		
+	}
+	
+	.u2_div {
+		text-align: center;
+	}
+	
+	#an:hover {
+		background-color: cornflowerblue;
+	}
+	
+	th {
+		text-align: center;
+		width: 450px;
+		height: 50px;
+		font-size: 14px;
+		
+	}
+	
+	td {
+		text-align: center;
+		width: 450px;
+		height: 50px;
+		font-size: 14px;
+	}
+	
+	tr:hover {
+		background-color: burlywood;
+	}
+	
+	th:hover {
+		background-color: greenyellow;
+	}
+	
+	td:hover {
+		background-color: red;
+	}
+	
+	button:hover {
+		background-color: red;
+		color: white;
+	}
+	
+	h2 {
+		text-align: center;
+		color: cornflowerblue;
+	}
+	
+	p {
+		font-size: 14px;
+	}
+	#kj1{
+		position: absolute;
+		left: 200px;
+		top: 0px;
+		width: 80%;
+		height: 350px;
+		background-color: ghostwhite;
+	}
+	#kj2{
+		position: absolute;
+		left: 200px;
+		top: 350px;
+		width: 80%;
+		height: 400px;
+		background-color: cyan;
+	}
+	.fbwz{
+		position: absolute;
+		left: 460px;
+		top: 30px;
+	}
+	.wdfb{
+		position: absolute;
+		right: 200px;
+		top: -10px;
+	}
