@@ -52,11 +52,10 @@ body{
 	margin-top: 0px;
 }
 .but-u8u{
-	width: 10%;
+	width: 9%;
 	height: 42px;
 	background-color: #15D6BA;
 	font-size: 15px;
-	margin-left:-8px ;
 	margin-top: 0px;
 }
 .u5_left{
@@ -82,10 +81,24 @@ p{
 .u8_div{
 	width: 99.88%;
 	height: 715px;
-	background-color: #CCCCCC;
+	background-color: aliceblue;
 	border: 1px double black;
 }
 iframe{
 	width:100%;
 	height: 100%;
+}
+.but_left{
+	height: 45px;
+	width: 100%;
+	font-size:15px;
+	border: 1px double black;
+	background-color: #CCCCCC;
+	border-color:#AAAAAA
+}
+.xianshi{
+	display: block;
+}
+.yincang{
+	display: none;
 }
