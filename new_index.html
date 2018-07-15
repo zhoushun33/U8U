@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>U8U</title>
+	</head>
+	<link href="css/index.css" rel="stylesheet" type="text/css" />
+	<body>
+		<div id="u1_div">
+			<!--左边导航栏-->
+			<div class="u2_div">
+				<!--头像用户信息-->
+				<img class="img " id="u2_img" src="image/个人账号头像_昵称_u131.jpg">
+				<div class="u5_left">
+					<p id="xianshi"></p>
+				</div>
+				
+				<!--左边二级菜单-->
+				<div class="u6_left xianshi" id="shouye"  ></div>
+				<!--公司商品注册系统二级菜单-->
+				<div class="u6_left yincang" id="gsspzcxt"  >
+					<button class="but_left" onclick=lianjie("cjzjmb/glzj1.html")>管理证件</button>					
+					<button class="but_left" onclick=lianjie("gsygpt/spzjys/spzjys.html")>商品证件</button>
+					<button class="but_left" onclick=lianjie("gsygpt/yhzc/splb.html")>商品类别</button>
+					<button class="but_left" onclick=lianjie("ptdgsyg/wsyhzcdqztj/121.html")>公司注册</button>
+					<button class="but_left" onclick=lianjie("ptgsyg/yhzc/sku.html")>SKU库</button>					
+					<button class="but_left" onclick=lianjie("ptgsyg/yhzc/tiaoma.html")>条码管理</button>
+					<button class="but_left" onclick=lianjie("ptgsyg/yhzc/yzgl.html")>系统语种管理</button>
+					<button class="but_left" onclick=lianjie("ptgsyg/yhzc/zbbzglb.html")>主币币种管理</button>
+					<button class="but_left" onclick=lianjie("ptgsyg/yhzc/fbbzglb.html")>辅币币种管理</button>
+				</div>
+				<!--审核系统二级菜单-->
+				<div class="u6_left yincang" id="shxt" >
+					<button class="but_left" onclick=lianjie("glptcpxx/cpshpt.html")>产品审核平台</button>
+				</div>
+				<!--产品中心二级菜单-->
+				<div class="u6_left yincang" id="cpzx" >
+					<button class="but_left" onclick=lianjie("glptcpxx/cpxxlljc.html")>产品信息录入教程</button>
+					<button class="but_left" onclick=lianjie("glptcpxx/llcpxx.html")>公司产品录入</button>
+
+				</div>
+				<!--U8U平台二级菜单-->
+				<div class="u6_left yincang" id="u8upt" >
+					<button class="but_left"></button>				
+					
+				</div>
+				<!--运营管理二级菜单-->
+				<div class="u6_left yincang" id="yygl" >
+					<button class="but_left" onclick=lianjie("xitong/ptyygl/n.html")>广告发布</button>					
+					<button class="but_left" onclick=lianjie("xitong/ptyygl/ne2.html")>广告发布管理</button>
+					<button class="but_left" onclick=lianjie("xitong/ptyygl/ne.html")>员工账号服务</button>
+				</div>
+				<!--平台推广二级菜单-->
+				<div class="u6_left yincang" id="pttg" >
+					<button class="but_left"></button>					
+					
+				</div>
+				<!--人事管理二级菜单-->
+				<div class="u6_left yincang" id="rsgl" >
+					<button class="but_left" onclick=lianjie("ptgsyg/gsrsgl/gsrsgl1.html")>公司员工创建</button>
+					<button class="but_left" onclick=lianjie("ptgsyg/gsrsgl/gsrsgl2.html")>公司员工管理表</button>
+				</div>
+				<!--财务管理二级菜单-->
+				<div class="u6_left yincang" id="cwgl" >
+
+				</div>
+				<!--行政管理二级菜单-->
+				<div class="u6_left yincang" id="xzgl" >
+					<button class="but_left"></button>
+					
+				</div>
+				<!--大数据中心二级菜单-->
+				<div class="u6_left yincang" id="dsjzx" >
+					<button class="but_left"></button>				
+					
+				</div>
+				<!--商品管理二级菜单-->
+				<div class="u6_left yincang" id="spgl" >
+
+				</div>
+				<!--系统设置二级菜单-->
+				<div class="u6_left yincang" id="xtsz" >
+					
+				</div>
+			</div>
+			<!--顶部导航栏-->
+			<div class="u2-two">
+				<div class="u3_div"></div>
+				<div class="ux40">
+					<button class="but_top"  onclick="choose(this);hit('gsspzcxt')" >公司商品注册系统</button>
+					<button class="but-top2" onclick="choose(this);hit('shxt')">审核系统</button>
+					<button class="but-top2" onclick="choose(this);hit('cpzx')">产品中心</button>
+					<button class="but-top2" onclick="choose(this);hit('u8upt')">U8U平台</button>
+					<button class="but-top2" onclick="choose(this);hit('yygl')">运营管理</button>
+					<button class="but-top2" onclick="choose(this);hit('pttg')">平台推广</button>
+					<button class="but-top2" onclick="choose(this);hit('rsgl')">人事管理</button>
+					<button class="but-top2" onclick="choose(this);hit('cwgl')">财务管理</button>
+					<button class="but-top2" onclick="choose(this);hit('xzgl')">行政管理</button>
+					<button class="but-top2" onclick="choose(this);hit('dsjzx')">大数据中心</button>
+					<button class="but-u8u" onclick="choose(this)">u8u商城</button>
+				</div>
+				<div class="ux40">
+					<button class="but_top" onclick="choose(this);hit('spgl')" >商品管理</button>
+					<button class="but-top2" onclick="choose(this);hit('xtsz')">系统设置</button>
+				</div>
+				<div class="u4_div"></div>
+				<div class="u7_div"></div>
+				<div class="u8_div">
+					<!--<font size="30" >欢迎来到U8U！</font>-->					<!--主要内容-->
+			<iframe src="" id="link"></iframe>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	function choose(x){
+		var neirong=x.innerHTML;
+		var xianshi=document.getElementById("xianshi");
+		xianshi.innerHTML=neirong;	
+	}
+	function hit(x){
+//		console.log(x);
+		var a=document.getElementById(x);
+		var div=document.getElementsByClassName("u6_left");
+		for(var i=0;i<div.length;i++){
+			div[i].className="u6_left yincang";
+		};
+		a.className="u6_left xianshi";
+	}
+	function lianjie(x){
+		var a=document.getElementById('link');
+		a.src=x;
+	}
+	
+</script>

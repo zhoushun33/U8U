@@ -1,0 +1,17 @@
+h2
+{
+	text-align:center;
+	}
+.anniu{
+	text-align:center;
+            width:200px;
+            height:40px;
+            border:1px solid white;
+        }
+          
+div{
+	font-size:14px;
+}
+body{
+	background-color:lightgray;
+}

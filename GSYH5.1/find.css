@@ -1,0 +1,76 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style-type: none;
+}
+/*标题*/
+.box_head{
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;	
+	border-bottom: 2px solid rgb(112, 111, 124);
+}
+.box_body{
+	width: 40%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*找回方式选择按钮*/
+.box_select{
+	text-align: center;
+	font-size: 12px;
+}
+.box_select ul{
+	padding: 0;
+}
+.box_select li{
+	display: inline-block;
+	padding-right: 5px;
+	border-right: 1px solid;
+}
+.box_select span:hover{
+	cursor:pointer;
+	color: #6cf;
+	text-decoration: underline;
+}
+.box_select .li_last{
+	border: 0;
+}
+.box_body{
+	height: 275px;
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+}/*个人账户找回表单*/
+.box_form{
+	width: 450px;
+	height:40px;
+	border: 1px solid #ddd;
+	margin-bottom: 10px;
+}
+.box_form_span{
+	display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    width: 180px;
+    border-right: 1px solid #ddd;
+}
+.box_form_input{
+	margin-left: 17px;
+	border: 0;
+	outline: 0;
+}
+.box_form_button{
+	margin: auto;
+    width: 150px;
+}
+.box_form_button input{
+	height: 40px;
+    width: 150px;
+}
