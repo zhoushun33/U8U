@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/style2.css" media="screen" type="text/css" />
+		<style type="text/css">
+			body {
+				padding: 0px;
+				margin: 0px;
+				font-size: 12px;
+				 background color:#00CCFF;
+			}
+			
+			body a {
+				color: #03515d;
+				text-decoration: none;
+			}
+			
+			body button {
+				color: #03515d;
+				
+			}
+			
+			body span {
+				color: #03515d;
+			}
+			
+			.center_bottom input {
+				color: #03515d;
+				font-size: 12px;
+				height: 20px;
+				width: 40px;
+				padding: 2px;
+				vertical-align: middle;
+				text-align: center;
+				margin-bottom: 6px;
+			}
+			/**************************布局部分********************/
+			
+			.table_div {
+				width: 
+				1000px;
+				padding: 20px;
+				margin:0 auto;
+			}
+			
+			.div_clear {
+				clear: both;
+				
+			}
+			
+			.left_top {
+				background: url("./tab/images/tab_03.gif");
+				height: 30px;
+				width: 12px;
+				float: left;
+				
+			}
+			
+			.left_center {
+				background: url("./tab/images/tab_12.gif");
+				height: 400px;
+				width: 12px;
+				float: left;
+			}
+			
+			.left_bottom {
+				background: url("./tab/images/tab_18.gif");
+				height: 35px;
+				width: 12px;
+				float: left;
+			}
+			
+			.center_top {
+				background: url("./tab/images/tab_05.gif") repeat-x;
+				height: 30px;
+				line-height: 30px;
+				width: 900px;
+				float: left;
+			}
+			
+			.center_center {
+				height: 400px;
+				width: 900px;
+				float: left;
+			}
+			
+			.center_bottom {
+				background: url("./tab/images/tab_19.gif") repeat-x;
+				height: 35px;
+				width: 900px;
+				float: left;
+				line-height: 35px;
+			}
+			
+			.right_top {
+				background: url("./tab/images/tab_07.gif");
+				height: 30px;
+				width: 15px;
+				float: left;
+			}
+			
+			.right_center {
+				background: url("./tab/images/tab_15.gif");
+				height: 400px;
+				width: 15px;
+				float: left;
+			}
+			
+			.right_bottom {
+				background: url("./tab/images/tab_20.gif");
+				height: 35px;
+				width: 15px;
+				float: left;
+			}
+			/**************************************表格内容***********************************/
+			
+			.table_content {
+				margin: 5px;
+				border: 1px solid #B5D6E6;
+				width: 890px;
+				height: 390px;
+				overflow-x: hidden;
+				overflow-y: auto;
+			}
+			
+			.table_content table {
+				width: 100%;
+				border: 0;
+				border-collapse: collapse;
+				font-size: 12px;
+			}
+			
+			.table_content table tr:hover {
+				background-color: #C1EBFF;
+			}
+			
+			.table_content table th {
+				border-collapse: collapse;
+				height: 22px;
+				background: url("./tab/images/bg.gif");
+				border-right: 1px solid #B5D6E6;
+				border-bottom: 1px solid #B5D6E6;
+			}
+			
+			.table_content table td {
+				height: 22px;
+				word-wrap: break-word;
+				max-width: 200px;
+				text-align: center;
+				vertical-align: middle;
+				border-right: 1px solid #B5D6E6;
+				border-bottom: 1px solid #B5D6E6;
+			}
+			
+			.query {
+				margin-left: 719px;
+			}
+			
+			button {
+				color: #444444;
+				background: #F3F3F3;
+				border: 1px #DADADA solid;
+				padding: 5px 10px;
+				border-radius: 2px;
+				font-weight: bold;
+				font-size: 9pt;
+				outline: none;
+			}
+			
+			button:hover {
+				border: 1px #C6C6C6 solid;
+				box-shadow: 1px 1px 1px #EAEAEA;
+				color: white;
+				background: black;
+			}
+			
+			span {
+				margin-left: 10px;
+			}
+			select {
+				width: 200px;
+				height: 30px;
+				appearance: none;
+				-moz-appearance: none;
+				-webkit-appearance: none;
+				background: url("images/select.png") no-repeat right center;
+				font-size: 16px;
+				font-family: Microsoft YaHei;
+				margin-left: -150px;
+				
+			}
+			
+			a,p {
+				font-size: 20px;
+				font-family: 微软雅黑, 宋体, Arial, Helvetica, Verdana, sans-serif;
+			}
+			
+			input {
+				border: 1px solid #ccc;
+				padding: 7px 0px;
+				border-radius: 3px;
+				padding-left: 5px;
+				margin-left: -200px;
+			}
+			
+			/*#tiaozhuan{
+				position: absolute;
+				margin-left: 0px;
+				margin-top: 00px;}*/
+			
+			#login_click {
+				margin-top: 32px;
+				height: 30px;
+			}
+			
+			#login_click a {
+				text-decoration: none;
+				background: lightgreen;
+				color: white;
+				padding: 10px 510px 10px 510px;
+				font-size: 16px;
+				font-family: 微软雅黑, 宋体, Arial, Helvetica, Verdana, sans-serif;
+				font-weight: 100px;
+				border-radius: 5px;
+				-webkit-transition: all linear 0.30s;
+				-moz-transition: all linear 0.30s;
+				transition: all linear 0.30s;
+				margin-left:400px;
+			
+			}
+			
+			#login_click a:hover {
+				background: #00CCFF;
+							}
+			
+			#box{
+				text-align: center;
+			}
+			.txcsmc{
+				margin-left: -270px;
+				
+			}
+			.gsygcj{
+				margin-left: -185px;
+				color:#00CCFF;
+				/*padding: 10px 30px 10px 30px;*/
+				font-size: 30px;
+			}
+			/*.gsdm{
+				margin-left: -151px;
+			}*/
+			.ganwei{
+				margin-left: -200px;
+			}
+			.miaos{
+				margin-left: -130px;
+			}
+	
+		</style>
+		<script>
+//			window.onload = function() {
+//				var sel = document.getElementsByName('select')[0];
+//				var wen = document.getElementById("gangwei");
+//				var input = document.getElementById("input");
+//				sel.onchange = function() {
+//					var val = this.value;
+//					switch(val) {
+//						case "家用电器":
+//							wen.innerHTML = val;
+//							break;
+//						case "数码办公":
+//							wen.innerHTML = val;
+//							break;
+//						case "美妆服装":
+//							wen.innerHTML = val;
+//							break;
+//						case "食品生鲜":
+//							wen.innerHTML = val;
+//							break;
+//						case "...待添加":
+//							wen.innerHTML = val;
+//							break;
+//						case "前端工程师":
+//							wen.innerHTML = val;
+//							break;
+//					}
+//				}
+//			}
+//		</script>
+	</head>
+
+	<body>
+		
+		************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+		<div class="container">
+			<form id="contact" action="" method="post">
+				<h3>U8U文档管理系统</h3>
+				<!--<h4>产品基础信息</h4>
+				<fieldset>
+					<input placeholder="产品名称" type="text" tabindex="1" required autofocus>
+				</fieldset>
+				<fieldset>
+					<input placeholder="产品规格" type="text" tabindex="2" required>
+				</fieldset>
+				<fieldset>
+					<input placeholder="计量单位" type="tel" tabindex="3" required>
+				</fieldset>-->
+				<!--<fieldset>
+					<input placeholder="？？？" type="url" tabindex="4" required>
+				</fieldset>
+				<fieldset>
+					<textarea placeholder="产品图片（图片数量最多上传七张）" tabindex="5" required></textarea>
+				</fieldset>
+				<fieldset>
+					<!--<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>-->
+				<!--<h4>厂商基本信息录入</h4>	
+				<fieldset>
+					<input placeholder="厂商名称（包装上的标准公司落款为准）" type="text" tabindex="1" required autofocus>
+				</fieldset>
+				<fieldset>
+					<input placeholder="地址（具体详细）" type="text" tabindex="2" required>
+				</fieldset>
+				<fieldset>
+					<input placeholder="公司电话" type="tel" tabindex="3" required>
+				</fieldset>
+			    <fieldset>
+					<input placeholder="公司邮箱" type="email" tabindex="4" required>
+				</fieldset>
+	    
+			</form>
+
+		</div>
+		<div style="text-align:center;clear:both">
+			<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+			<script src="/follow.js" type="text/javascript"></script>
+		</div>
+		
+		<div class="container">
+			<form id="contact" action="" method="">-->
+				<!--<h3>Quick Contact</h3>-->
+				<h4>文件签收</h4>
+				<fieldset>
+					<input placeholder="文件编号" type="tel" tabindex="3" required>
+				</fieldset>
+				<fieldset>
+					<input placeholder="文件主要内容说明" type="tel" tabindex="3" required>
+				</fieldset>
+				<fieldset>
+					<input placeholder="公示员工账号范围" type="tel" tabindex="1" required autofocus>
+				</fieldset>
+				<fieldset>
+					<input placeholder="签收员工账号范围" type="tel" tabindex="3" required>
+				</fieldset>
+				<!--<fieldset>
+					<input placeholder="产品质量认证名称" type="text" tabindex="1" required autofocus>
+				</fieldset>
+				<fieldset>
+					<input placeholder="产品质量认证证书" type="tel" tabindex="3" required>
+				</fieldset>-->
+				
+				<!--<fieldset>
+					<input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
+				</fieldset>-->
+				<fieldset>
+					<textarea placeholder="文件上传（若过大文本请压缩后上传）" tabindex="5" required></textarea>
+				</fieldset>
+				<fieldset>
+					<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">确定上传</button>
+				</fieldset>
+			</form>
+
+		</div>
+		<div style="text-align:center;clear:both">
+			<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+			<script src="/follow.js" type="text/javascript"></script>
+		</div>
+	
+			<!--<p class="gsygcj">产品审核信息录入</p>
+			<!--<a >员工注册邀请码：</a>-->
+			<!--<p class="txcsmc">填写厂商名称</p>
+			<input id="input " placeholder="请输入完整名称">-->
+	<!--		<a class="gsdm">公司代码：66666666</a>--><!--到时候由后端传过来-->
+			<!--<p class="ganwei">选择填写产品类别 ：</p>
+			<select id="select" name="select">
+					<option value="家用电器">家用电器</option>
+					<option value="数码办公">数码办公</option>
+					<option value="美妆服装">美妆服装</option>
+					<option value="食品生鲜">食品生鲜</option>
+					<option value="医疗保健">医疗保健</option>
+					<option value="...待添加">...待添加</option>
+				</select>
+			<form id="form">
+				<p class="miaos">所填<a id="gangwei">家用电器</a>的说明描述：</p>
+				<textarea rows="8" cols="46" class="dhwb">
+					
+				</textarea></br>-->
+				
+			   <!--绑定入职要求模板-->
+				
+			<!--</form>-->
+		<div class="table_div">
+			<div class="div_clear">
+				<div class="left_top"></div>
+				<div class="center_top">
+					<div style="float:left">
+						
+						<span style="font-weight:10px">已管理</span>
+						<a class="query"></a><input placeholder="请输入文件编号">
+					</div>
+					<div style="float:right;padding-right:3px">
+						<button id="tianjiao" >添加</button>
+						<button id="tianjiao" >保存</button>
+					</div>
+				</div>
+				<div class="right_top"></div>
+			</div>
+			<div class="div_clear">
+				<div class="left_center"></div>
+				<div class="center_center">
+					<div class="table_content">
+						<table cellspacing="0px" cellpadding="0px" >
+							<thead>
+								<tr height="50px">
+									<th width="20%">文件名称</th>
+									<th width="16%">文件编号</th>
+									<th width="16%">文件管理</th>
+									<th width="16%">文件内容</th>
+									<th width="16%">文件所属</th>
+									<th wdith="20%" style="border-right:none">操作</th>
+								</tr>
+							</thead>
+							<tbody id="tbody">
+								<tr>
+									<td width="16%">ff</td>
+									<td width="16%">ff</td>
+									<td width="16%">f</td>
+									<td width="16%">fe</td>
+									<td width="16%">ew</td>
+									<td width="20%" style="border-right:none">
+										<button>更新</button>
+										<button>删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td width="16%">ff</td>
+									<td width="16%">ff</td>
+									<td width="16%">f</td>
+									<td width="16%">fe</td>
+									<td width="16%">ew</td>
+									<td width="20%" style="border-right:none">
+										<button>更新</button>
+										<button>删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td width="16%">ff</td>
+									<td width="16%">ff</td>
+									<td width="16%">f</td>
+									<td width="16%">fe</td>
+									<td width="16%">ew</td>
+									<td width="20%" style="border-right:none">
+										<button>更新</button>
+										<button>删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td width="16%">ff</td>
+									<td width="16%">ff</td>
+									<td width="16%">f</td>
+									<td width="16%">fe</td>
+									<td width="16%">ew</td>
+									<td width="20%" style="border-right:none">
+										<button>更新</button>
+										<button>删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td width="16%">ff</td>
+									<td width="16%">ff</td>
+									<td width="16%">f</td>
+									<td width="16%">fe</td>
+									<td width="16%">ew</td>
+									<td width="20%" style="border-right:none">
+										<button>更新</button>
+										<button>删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td width="16%">ff</td>
+									<td width="16%">ff</td>
+									<td width="16%">f</td>
+									<td width="16%">fe</td>
+									<td width="16%">ew</td>
+									<td width="20%" style="border-right:none">
+										<button>更新</button>
+										<button>删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td width="16%">ff</td>
+									<td width="16%">ff</td>
+									<td width="16%">f</td>
+									<td width="16%">fe</td>
+									<td width="16%">ew</td>
+									<td width="20%" style="border-right:none">
+										<button>更新</button>
+										<button>删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td width="16%">ff</td>
+									<td width="16%">ff</td>
+									<td width="16%">f</td>
+									<td width="16%">fe</td>
+									<td width="16%">ew</td>
+									<td width="20%" style="border-right:none">
+										<button>更新</button>
+										<button>删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td width="16%">ff</td>
+									<td width="16%">ff</td>
+									<td width="16%">f</td>
+									<td width="16%">fe</td>
+									<td width="16%">ew</td>
+									<td width="20%" style="border-right:none">
+										<button>更新</button>
+										<button>删除</button>
+									</td>
+								</tr>
+								<tr>
+									<td width="16%">ff</td>
+									<td width="16%">ff</td>
+									<td width="16%">f</td>
+									<td width="16%">fe</td>
+									<td width="16%">ew</td>
+									<td width="20%" style="border-right:none">
+										<button>更新</button>
+										<button>删除</button>
+									</td>
+								</tr>
+								
+							
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="right_center"></div>
+			</div>
+			<div class="div_clear">
+				<div class="left_bottom"></div>
+				<div class="center_bottom">
+					<span><!--&nbsp;&nbsp;-->共有 3 条记录，当前第 1/1 页</span>
+					<span>跳转到</span>
+					
+					<div style="float:right;padding-right:410px">
+						<!--<input type="button" value="首页" />-->
+						<!--<input type="button" value="上页" />
+						<input type="button" value="下页" />-->
+						<!--<input type="button" value="尾页" />-->
+						
+						<input type="text" size="100px" value="" />
+						<!--<input type="button" value="跳转" />-->
+					</div>
+					
+				</div>
+				<div class="right_bottom"></div>
+			</div>
+		</div>
+		<!--<button id="tiaozhuan">确定</button>--> 
+		<div id="login_click">
+					<a id="btlogin" href="#"> 确定</a><!--公司代码与员工注册邀请码一起发送-->
+					<!--少一个提示 如：正在发送，发送成功...-->
+				</div>
+		</div><br><br>
+		<!--少了审核员工入职条件，洽谈合作合约，赋予员工账号-->
+	</body>
