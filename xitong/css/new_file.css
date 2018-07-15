@@ -1,0 +1,128 @@
+*{
+	margin: 0;
+	font-size: 14px;
+}
+.u1_div{
+	position: absolute;
+	left: 200px;
+	width: 80%;
+	height: 30px;
+	top: 50px;
+	background-color: gainsboro;
+}
+.u2_div{
+	position: absolute;
+	left: 200px;
+	top: 80px;
+	width: 80%;
+	height: 80px;
+	background-color: ghostwhite;
+}
+.u3_div{
+	position: absolute;
+	left: 200px;
+	top: 160px;
+	width: 80%;
+	height: 30px;
+	background-color: antiquewhite;
+}
+.u4_div{
+	position: absolute;
+	left: 200px;
+	top: 190px;
+	width: 80%;
+	height: 100px;
+	background-color: gainsboro;
+}
+.u5_div{
+	position: absolute;
+	left: 200px;
+	top: 290px;
+	width: 80%;
+	height: 40px;
+	background-color: beige;
+}
+.u6_div{
+	position: absolute;
+	left: 200px;
+	top: 330px;
+	width: 80%;
+	height: 40px;
+	background-color: greenyellow;
+}
+#shr{
+	position: absolute;
+	left: 20px;
+	top: 10px;
+}
+#lxdh{
+	position: absolute;
+	right: 20px;
+	top: 10px;
+}
+#shdz{
+	position: absolute;
+	left: 20px;
+	top: 50px;
+}
+#dm{
+	position: absolute;
+	left: 40px;
+	top: 10px;
+}
+#spjs{
+	position: absolute;
+	left: 150px;
+	top: 10px;
+}
+#spfl{
+	position: absolute;
+	left: 150px;
+	top: 55px;
+}#spjg{
+	position: absolute;
+	left: 150px;
+	top: 80px;
+}#gmsl{
+	position: absolute;
+	right: 10px;
+	top: 80px;
+}
+#gmsl2{
+	position: absolute;
+	left: 10px;
+	top:10px;
+}
+#gmsl3{
+	position: absolute;
+	right: 10px;
+	top:10px;
+}
+#spjg2{
+	position: absolute;
+	right: 120px;
+	top: 10px;
+}
+#tjdd{
+	position: absolute;
+	right: 10px;
+	top: 6px;
+}
+button:hover{
+		background-color: red;
+		color: white;
+}
+.u7_div{
+	position: absolute;
+	top: 0px;
+	left: 200px;
+	width: 80%;
+	height: 50px;
+	background-color: w;
+}
+.u8_div{
+	position: absolute;
+	right: 20px;
+	top: 10px;
+}
+
