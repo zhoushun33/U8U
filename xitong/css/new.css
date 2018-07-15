@@ -1,0 +1,53 @@
+body{
+	background-color:wheat;
+}
+th{
+	text-align: center;
+	width: 280px;
+	height: 80px;
+	font-size: 14px;
+}
+
+td{
+	text-align: center;
+	width: 280px;
+	height: 80px;
+	font-size: 14px;
+}
+tr:hover {
+	background-color: burlywood;
+}
+th:hover {
+	background-color: greenyellow;
+}
+
+td:hover {
+	background-color: red;
+}
+#kj1{
+	position: absolute;
+	left: 200px;
+	top: 0px;
+	width: 80%;
+	height: 200px;
+	text-align: center;
+	vertical-align:middle;  
+	background-color: ghostwhite;
+	
+}
+#kj2{
+	position: absolute;
+	left: 200px;
+	top: 200px;
+	width: 80%;
+	height: 500px;
+	background-color: gainsboro;
+}
+.u1_div{
+	margin: 0 auto;
+}
+.u2_div{
+	position: absolute;
+	top: 70px;
+	left: 500px;
+}

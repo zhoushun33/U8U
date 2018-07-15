@@ -1,0 +1,218 @@
+<!doctype>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>找回账户</title>
+		<link rel="stylesheet" href="./find.css">
+	</head>
+	<body>
+		<div class="box_one">
+			<div class="box_head">
+				<h2>公司账户找回界面</h2>
+			</div>
+			<div class="box_select">
+					<ul>
+						<li>
+							<span id="form_one" style="text-decoration: underline;color: #6cf;">通过个人账户找回</span>
+						</li>
+						<li>
+							<span id="form_two">通过公司注册证件找回</span>
+						</li>
+						<li>
+							<span id="form_three">通过公司证件注册人授权信息找回</span>
+						</li>
+						<li class="li_last" id="form_four">
+							<span>通过业务信息核对找回</span>
+						</li>
+					</ul>
+				</div>
+			<div class="box_body">
+				
+				<form id="box_form_one" action="#" style="margin-top: 40px;display: block" onsubmit="return sub()" method="post">
+					<input type="hidden" name="gerenzhanghuzhaohui">
+					<div class="box_form">
+						<span class="box_form_span">
+						输入账户
+						</span>
+						<input type="text" class="box_form_input" name="admin" placeholder="请输入员工账户">
+					</div>
+					<div class="box_form">
+						<span class="box_form_span">
+						输入密码
+						</span>
+						<input type="password" class="box_form_input" name="password" id="" placeholder="请输入员工密码">
+					</div>
+					<div class="box_form">
+						<span class="box_form_span">
+						输入你的接收邮箱
+						</span>
+						<input type="email" class="box_form_input" id="mazey" name="receive_email" placeholder="请输入你的接收邮箱" required="required">
+					</div>
+					<div class="box_form_button">
+						<input type="submit" value="提交">
+					</div>
+				</form>
+
+				<form id="box_form_two" action="#" style="display: none;" onsubmit="return sub()">
+					<p><h4 style="color: red">警告！</h4>此服务由人工审查，请输入正确公司名，并且提交清晰证件照片！
+					</p>
+					<input type="hidden" name="gongsizhucezhengjianzhaohui">
+					<div class="box_form">
+						<span class="box_form_span">
+						输入公司名称
+						</span>
+						<input type="text" class="box_form_input" name="company_name"placeholder="请输入公司名称">
+					</div>
+					<div class="box_form">
+						<span class="box_form_span">
+						提交公司注册证件照片
+						</span>
+						<input type="file" name="credentials_image" value="提交">
+					</div>
+					<div class="box_form">
+						<span class="box_form_span">
+						输入你的接收邮箱
+						</span>
+						<input type="email" class="box_form_input" id="mazey" name="receive_email" placeholder="请输入你的接收邮箱" required="required">
+					</div>
+					<div class="box_form_button">
+						<input type="submit" value="提交">
+					</div>
+				</form>
+
+				<form id="box_form_three" action="#" style="display: none;" onsubmit="return sub()">
+					
+					<input type="hidden" name="gongsizhengjianzhucerenshouquanxinxizhaohui">
+					<div class="box_form">
+						<span class="box_form_span">
+						输入注册人姓名
+						</span>
+						<input type="text" class="box_form_input" name="registrant_name" placeholder="请输入注册人姓名">
+					</div>
+					<div class="box_form">
+						<span class="box_form_span">
+						输入注册人身份证号码
+						</span>
+						<input type="text" class="box_form_input" name="ID_card_No." placeholder="请输入注册人身份证号码">
+					</div>
+					<div class="box_form">
+						<span class="box_form_span">
+						输入公司注册登记号码
+						</span>
+						<input type="text" class="box_form_input" name="registration_number" placeholder="请输入公司注册登记号码">
+					</div>
+					<div class="box_form">
+						<span class="box_form_span">
+						输入你的接收邮箱
+						</span>
+						<input type="email" class="box_form_input" id="mazey" name="receive_email" placeholder="请输入你的接收邮箱" required="required">
+					</div>
+					<div class="box_form_button">
+						<input type="submit" value="提交">
+					</div>
+				</form>
+
+				<form id="box_form_four" action="#" style="display: none" onsubmit="return sub()">
+					
+					<div class="box_form">
+						<span class="box_form_span">
+						输入你的接收邮箱
+						</span>
+						<input type="email" id="mazey" class="box_form_input" name="receive_email" placeholder="请输入你的接收邮箱" required="required">
+					</div>
+					<div class="box_form">
+						<span class="box_form_span">
+						输入公司名称
+						</span>
+						<input type="text" class="box_form_input" name="company_name"  placeholder="请输入公司名称">
+					</div>
+					<div class="box_form_checkbox" name="sphere_of_business">
+						<input type="checkbox" name="type" value="工程设计">工程设计
+						<input type="checkbox" name="type" value="招投标代理">招投标代理
+						<input type="checkbox" name="type" value="项目管理">项目管理
+						<input type="checkbox" name="type" value="软件开发">软件开发
+						<input type="checkbox" name="type" value="网络技术咨询服务">网络技术咨询服务
+					</div>
+
+					<div class="box_form_button">
+						<input type="submit" value="提交">
+					</div>
+				</form>	
+			</div>
+		</div>
+		<script>
+			var form_one=document.getElementById('form_one');
+			var form_two=document.getElementById('form_two');
+			var form_three=document.getElementById('form_three');
+			var form_four=document.getElementById('form_four');
+			var box_form_one=document.getElementById('box_form_one');
+			var box_form_two=document.getElementById('box_form_two');
+			var box_form_three=document.getElementById('box_form_three');
+			var box_form_four=document.getElementById('box_form_four');
+			function switch_form() {
+				box_form_one.style.display="none";
+				form_one.style.textDecoration="none";
+				form_one.style.color="black";
+
+				box_form_two.style.display="none";
+				form_two.style.textDecoration="none";
+				form_two.style.color="black";
+
+				box_form_three.style.display="none";
+				form_three.style.textDecoration="none";
+				form_three.style.color="black";
+
+				box_form_four.style.display="none";
+				form_four.style.textDecoration="none";
+				form_four.style.color="black";
+				switch(this.id){
+					case "form_one":{
+						box_form_one.style.display="block";
+						form_one.style.textDecoration="underline";
+						form_one.style.color="#6cf";
+							break;
+						}
+					case "form_two":{
+						box_form_two.style.display="block";
+						form_two.style.textDecoration="underline";
+						form_two.style.color="#6cf";
+							break;
+						}
+					case "form_three":{
+						box_form_three.style.display="block";
+						form_three.style.textDecoration="underline";
+						form_three.style.color="#6cf";
+							break;
+						}
+					case "form_four":{
+						box_form_four.style.display="block";
+						form_four.style.textDecoration="underline";
+						form_four.style.color="#6cf";
+							break;
+						}				
+				}
+				
+
+			}
+			form_one.addEventListener("click",switch_form,false);
+			form_two.addEventListener("click",switch_form);
+			form_three.addEventListener("click",switch_form);
+			form_four.addEventListener("click",switch_form);
+
+			function sub(){
+				var a=confirm('是否提交？')
+				if(a){
+					var aa="申请提交，请耐心等待并定时查看邮件！";
+					alert(aa);
+					document.write('<br/>')
+					document.write('正在返回主页。。。。。。');
+					setTimeout("window.location.href='http://www.baidu.com'",500)	
+					return true;
+					
+				}else{
+					return false;
+				}
+			}
+		</script>
+	</body>
+</html>

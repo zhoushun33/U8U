@@ -1,0 +1,307 @@
+.top-left {
+	float: left;
+	width: 200px;
+	color: mediumblue;
+}
+
+.top-left p {
+	font-size: 60px;
+	margin-left: 70px;
+	position: relative;
+	left: 70px;
+	top: -60px;
+}
+
+.top-left a {
+	font-size: 28px;
+	position: relative;
+	left: 220px;
+	top: -160px;
+	text-decoration: none;
+	list-style-type: none;
+	color: #000000;
+}
+
+.top-left a:hover {
+	color: orange;
+}
+
+#aaa {
+	position: absolute;
+	left: 750px;
+	top: 28px;
+	width: 520px;
+	height: 45px;
+	padding: 0;
+	border: 5px solid dimgrey;
+}
+
+.inp {
+	float: left;
+	display: inline;
+	padding: 10px;
+	font-size: 18px;
+	width: 504px;
+	border: none;
+	color: #999;
+}
+
+.inp:focus,
+.but:focus {
+	outline: none;
+}
+
+.but {
+	position: absolute;
+	top: -5px;
+	left: 520px;
+	width: 112px;
+	height: 55px;
+	line-height: 55px;
+	border: none;
+	background-color: dimgrey;
+	color: white;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	cursor: pointer;
+}
+
+.tag {
+	font-size: 23px;
+	position: relative;
+	top: 140px;
+	left: -80px;
+}
+
+.tag a {
+	padding: 20px;
+	text-decoration: none;
+}
+
+.tag a:hover {
+	color: red;
+}
+
+.hr {
+	position: relative;
+	top: 145px;
+	left: -128px;
+}
+
+.hr1 {
+	position: relative;
+	top: 133px;
+	left: -429px;
+}
+
+
+.ann a{
+	font-size: 20px;
+	position: relative;
+	top: 154px;
+	left: -150px;
+	margin-left: 80px;
+}
+
+.ann input{
+	font-size: 20px;
+	position: relative;
+	top: 154px;
+	left: -120px;
+	margin-left: 80px;
+	height: 26px;
+	width: 26px;
+}
+
+.box11{
+	position: relative;
+	top: 180px;
+	left: 120px;
+	width: 80%;
+	height: 200px;
+	border: 1px solid  saddlebrown;
+}
+
+.box11 input{
+	position: absolute;
+	left: 40px;
+	top: 30px;
+	height: 26px;
+	width: 26px;
+	size: 30px;
+}
+.box11 img{
+    margin-top: 30px;
+    margin-left: -110px;
+	width: 140px;
+	height: 100px;
+	float: left;
+	
+}
+
+#imag1{
+	width: 280px;
+	height: 180px;
+	position: relative;
+	top: -20px;
+	left: 120px;
+	display: none;
+	z-index: 2;
+}
+#wenz{
+	position: absolute;
+	left: 250px;
+	top: 50px;
+}
+#wenz span a{
+	font-size: 12px;
+	text-decoration: none;
+}
+
+#wenz span:hover{
+	text-decoration:underline;
+}
+
+.wenz2{
+	font-size: 12px;
+	color: grey;
+	width: 200px;
+	position: absolute;
+	left: 247px;
+	top: 0px;
+}
+.jiag{
+	font-size: 16px;
+	font-weight: bold;
+	position: absolute;
+	left: 460px;
+	top: 10px;
+}
+.a1{
+	color: grey;
+	text-decoration: line-through;
+}
+
+.box12{
+	border: 1px solid darkgray;
+	width: 30px;
+	height: 28px;
+	position:absolute ;
+	left: 650px;
+	top: 10px;
+}
+
+.box12 {
+	text-align: center;
+    padding-top:3px;
+}
+.box13{
+	border: 1px solid darkgray;
+	width: 30px;
+	height: 28px
+	position:absolute ;
+	left: 620px;
+	top: 10px;
+}
+.box13{
+	text-align: center;
+    padding-top:3px;
+}
+.box14{
+	border: 1px solid darkgray;
+	width: 30px;
+	height: 28px;
+	position:absolute ;
+	left: 590px;
+	top: 10px;
+}
+.box14{
+	text-align: center;
+    padding-top:3px;
+}
+#jiagd{
+	position:absolute ;
+	left: 720px;
+	top: 10px;
+	font-size: 20px;
+	color: red;
+}
+.box15{
+	width: 200px;
+	position:absolute ;
+	left: 830px;
+	top: 10px;
+	font-size: 20px;
+  
+}
+.box15 a{
+	text-decoration: none;
+}
+.box15 a:hover{
+	color: orange;
+	text-decoration: underline;
+}
+
+.box16{
+	width:80%;
+	height: 60px;
+	background-color: lightgray;
+	position: absolute;
+	left: 125px;
+	top: 520px;
+    
+}
+
+.box16 input{
+	position: absolute;
+	left:35px;
+	top: 23px;
+	height: 17px;
+	width: 17px;
+	size: 30px;
+	z-index: 2;
+	
+}
+
+.box17{
+	padding: 20px;
+	margin-left: 46px;
+}
+.box17 a{
+	margin-left: 7px;
+}
+.box17 a:hover{
+	color:darkorange;
+}
+
+.box18{
+	position: absolute;
+	left:575px;
+	top: 8px;
+}
+.box18 a{
+	margin-left: 2px;
+}
+
+#su{
+	font-size: 28px;
+	color: orangered;
+}
+.box19{
+	position: absolute;
+	left:785px;
+	top: 8px;
+}
+.box19 button{
+	position: absolute;
+	left:259px;
+	top: -8px;
+	width: 170px;
+	height: 60px;
+	background-color:orange;
+	font-size: 25px;
+	color: white;
+}
+.box19 button :hover{
+	background-color: orange;
+}
