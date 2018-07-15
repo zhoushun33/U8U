@@ -88,3 +88,17 @@ iframe{
 	width:100%;
 	height: 100%;
 }
+.but_left{
+	height: 45px;
+	width: 100%;
+	font-size:15px;
+	border: 1px double black;
+	background-color: #CCCCCC;
+	border-color:#AAAAAA
+}
+.xianshi{
+	display: block;
+}
+.yincang{
+	display: none;
+}
