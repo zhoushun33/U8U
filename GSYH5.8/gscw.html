@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="gscw.css" rel="stylesheet" type="text/css"  />
+	</head>
+	<header>
+		<h2 style="text-align: center;" class="biaoti">公司财务</h2>
+	</header>
+	<body>
+		<form>
+			<input type="button" onclick="change()" value="用户财务帐户账单" title="点击切换用户" />
+		<div style="float:left">
+			<span style="font-weight:bold"></span>
+		</div>
+		<div style="float:right;padding-right:3px" >
+			<button>搜索</button>
+			<input type="text" placeholder="请输入索引内容" />
+			<button onclick="cin()">添加</button>
+			<button onclick="bc()">保存</button>
+		</div>
+		<div id="1" style="display: block">
+		<div id="yg">
+			<table summary="员工财务帐户账单">
+				<tr>
+					<th>员工</th>
+					<th>进账</th>
+					<th>支出</th>
+					<th>税票</th>
+					<th>报损</th>
+					<th>合计</th>
+					<th>日期</th>
+				</tr>
+				<tr>
+					<td>小李</td>
+					<td>100</td>
+					<td>100</td>
+					<td>100</td>
+					<td>100</td>
+					<td>-400</td>
+					<td>2017.1.1</td>
+				</tr>
+			</table>
+		</div>
+		<div style="float:left">
+			<span style="font-size:11px">共1页 当前页数：1</span>
+		</div>
+		<div style="float:right;padding-right:3px" >
+			<button>上页</button>
+			<button>下页</button>
+			<button>首页</button>
+			<button>尾页</button>
+			<a>跳转到</a>
+			<input type="text" style="width: 20px;"  />
+			<button>跳转</button>
+			<button onclick="add1()">总计</button>
+		</div>
+		</div>
+		<div id="2" style="display: none">
+		<div id="ys">
+			<table summary="友商财务帐户账单">
+				<tr>
+					<th>友商</th>
+					<th>进账</th>
+					<th>支出</th>
+					<th>税票</th>
+					<th>报损</th>
+					<th>合计</th>
+					<th>日期</th>
+				</tr>
+				<tr>
+					<td>小黄</td>
+					<td>500</td>
+					<td>100</td>
+					<td>500</td>
+					<td>100</td>
+					<td>-300</td>
+					<td>2017.1.1</td>
+				</tr>
+				<tr>
+					<td>小明</td>
+					<td>50</td>
+					<td>50</td>
+					<td>0</td>
+					<td>0</td>
+					<td>50</td>
+					<td>2017.1.1</td>
+				</tr>
+			</table>
+		</div>
+		<div style="float:left">
+			<span style="font-size:11px">共1页 当前页数：1</span>
+		</div>
+		<div style="float:right;padding-right:3px" >
+			<button>上页</button>
+			<button>下页</button>
+			<button>首页</button>
+			<button>尾页</button>
+			<a>跳转到</a>
+			<input type="text" style="width: 20px;"  />
+			<button>跳转</button>
+			<button onclick="add2()">总计</button>
+		</div>
+		</div>
+		</form>
+	</body>
+	<script>
+		var num=0;
+		function change(){
+			var a=document.getElementById('1');
+			var b=document.getElementById('2');
+			if(num%2==0)
+			{
+				a.style.display="none";
+				b.style.display="block";
+			}else{
+				a.style.display="block";
+				b.style.display="none";
+			}
+			num++;
+		}
+		function add1(){
+			alert("总计——进制:100 支出:100 税票:100 报损:100 合计:-400");
+		}
+		function add2(){
+			alert("总计——进制:550 支出:150 税票:500 报损:100 合计:-250");
+		}
+		function cin(){
+			prompt("员工： 进账： 支出： 税票： 报损： 合计： 日期：");
+		}
+		function bc(){
+			confirm("是否确认无误");
+		}
+	</script>
+</html>

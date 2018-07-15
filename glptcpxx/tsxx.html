@@ -1,0 +1,130 @@
+<!DOCTYPE >
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title></title>
+		<style type="text/css">
+			body {background-color:aliceblue}
+			background-color: deepskyblue;
+			table {
+				border-collapse: collapse;
+				border: solid 1px #ccc;
+				width: 600px;
+			}
+			
+			td {
+				border: solid 1px #ccc;
+				font-size: 12px;
+				height: 30px;
+				padding-left: 10px;
+			}
+			
+			input {
+				
+				font-size: 12px;
+				width: 500px;
+				height: 23px;
+				border: none;
+			}
+			
+			textarea {
+				width: 98%;
+				height: 200px;
+				border: none;
+			}
+			
+			.main {
+				
+				color:deepskyblue ;
+				margin: 0 auto;
+				width: 600px;
+			}
+			
+			.d {
+				background-color: lightgreen;
+				color: cadetblue;
+				border: none;
+				width: 200px;
+				height: 30px;
+				cursor: pointer;
+			}
+			
+			.over {
+				background-color: deepskyblue;
+				color: green;
+				border: none;
+				width: 200px;
+				height: 30px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="main">
+			<div>
+				<h1 align="center">产品投诉信息说明</h1>
+			</div>
+			<div>
+				<table>
+					<tr>
+						<td width="10">投诉厂商名称：</td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td height="62">投诉产品名称：</td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td height="20" colspan="2">具体说明：</td>
+					</tr>
+					<tr>
+						<td style="height:80px">
+							<textarea name="" cols="" rows=""></textarea>
+						</td>
+						<td style="height:80px">
+							<textarea name="" cols="" rows=""></textarea>
+						</td>
+						
+					</tr>
+					<tr>
+						<td colspan="2">个人邮箱（仅作联系用途）：</td>
+					</tr>
+					<tr>
+						<td>个人住址<br>（仅联系用途）：</td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">
+							<input type="button" value="提交" class="d"/>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript">
+	var inp = document.getElementsByTagName("input")[3];
+	inp.onmouseover=function(){
+		inp.className="over";
+	}
+	inp.onmouseout=function(){
+		inp.className="d";
+	}
+	inp.onclick=function(){
+		alert("已提交后台");
+		inp.onclick="";
+	}
+	inp.ondblclick=function(){
+		alert("请勿重复提交")
+	}
+	document.getElementsByTagName("input")[0].onchange=function(){
+		alert(document.getElementsByTagName("input")[0].value)
+	}
+	document.getElementsByTagName("input")[1].onchange=function(){
+		alert("请勿重复提交")
+	}
+</script>
