@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="grchgl.css" />
+	</head>
+	<header>
+		<div class="desc">身份验证</div>
+		
+	</header>
+	<style>
+	 label{
+            cursor: pointer;
+            display: inline-block;
+            padding: 3px 6px;
+            text-align: right;
+            width: 80px;
+            vertical-align: top;
+        }	
+	</style>
+	<br />
+
+		<body  align="center">
+		<!--<div class="solid">
+
+		
+		
+		<label>手机号码：
+		<input type="text" name="" id="" value="" /><span >请输入手机/邮箱/用户名</span>
+		</label><br />
+		<label>验证码：
+		<input type="text" name="" id="" value="" /><span >请留意短信</span>
+		</label><br />-->
+		
+		  
+		<p><label>手机号码：</label>
+	   <input type="text"><span >请输入绑定的手机</span></p>
+	   <p><label >验证码：</label>
+	   <input type="text"><span >请输入短信验证码</span></p>
+	   <p><label >密码：</label>
+	   <input type="password"><span >请输入修改的密码</span></p>
+	   	<div class="submit_btn" style="text-align:center">
+					<button type="submit" id="submit_btn" onclick="submit();">保存</button>
+				</div>
+	   
+	</body>
+		
+		
+	</body>
+</html>
+<script type="text/javascript">
+	function submit()
+	{
+		alert("保存成功");
+	}
+	
+</script>

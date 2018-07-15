@@ -88,6 +88,20 @@ iframe{
 	width:100%;
 	height: 100%;
 }
+<<<<<<< HEAD
+
+#u6{
+	position: absolute;
+	top: 100px;
+	left: 33px;
+}
+
+.u4{
+	position: absolute;
+	top: 70px;
+	left: 33px;
+}
+=======
 .but_left{
 	height: 45px;
 	width: 100%;
@@ -102,3 +116,4 @@ iframe{
 .yincang{
 	display: none;
 }
+>>>>>>> 5abea06fb0b853a07e04159448468a30952d0c79
