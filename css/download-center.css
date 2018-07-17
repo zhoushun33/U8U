@@ -1,0 +1,116 @@
+<style>
+			div{background-color: white;}
+			#U8Ulogo{
+				width: 100px;
+				height: 100px;
+				position: absolute;
+			}
+			#xzzx{
+				font-family:"黑体" ;
+				font-size: 25px;
+				position:  absolute;
+				left:105px;
+				top:8px;
+				letter-spacing: 1px;
+			}
+			#summury{
+				font-family:"黑体" ;
+				font-size: 18px;
+				position:  absolute;
+				left:107px;
+				top:50px;
+			}
+			#home-page{
+				font-family:"黑体" ;
+				font-size: 25px;
+				position:  absolute;
+				left:800px;
+				top:12px;
+				letter-spacing: 1px;
+			}
+			#classfy{
+				font-family:"黑体" ;
+				font-size: 25px;
+				position:  absolute;
+				left:1000px;
+				top:12px;
+				letter-spacing: 1px;
+			}
+			#demo1{
+				border: 1px solid white;
+				height: 120px;
+				width: 350px;
+				position:  absolute;
+				left:500px;
+				top:250px;
+			}
+			#demo2{
+				border: 1px solid white;
+				height: 120px;
+				width: 350px;
+				position:  absolute;
+				left:1100px;
+				top:250px;
+			}
+			#demo3{
+				border: 1px solid white;
+				height: 120px;
+				width: 350px;
+				position:  absolute;
+				left:500px;
+				top:450px;
+			}
+			#demo4{
+				border: 1px solid white;
+				height: 120px;
+				width: 350px;
+				position:  absolute;
+				left:1100px;
+				top:450px;
+			}
+			#demo5{
+				border: 1px solid white;
+				height: 120px;
+				width: 350px;
+				position:  absolute;
+				left:500px;
+				top:650px;
+			}
+			
+			#demo6{
+				border: 1px solid white;
+				height: 120px;
+				width: 350px;
+				position:  absolute;
+				left:1100px;
+				top:650px;
+			}
+			
+			.rjlogo{
+				height: 120px;
+				width: 120px;
+				position:  absolute;
+			}
+			.rjmc{
+				font-family:"黑体" ;
+				font-size: 20px;
+				position: absolute;
+				left: 123px;
+				top:15px;
+			}
+			.rjjj{
+				font-family:"黑体" ;
+				font-size: 18px;
+				position: absolute;
+				left: 123px;
+				top:45px;
+			}
+			.dlb{
+				height: 30px;
+				width: 30px;
+				position:  absolute;
+				right: 0px;
+				top: 45px;
+			}
+			
+		</style>

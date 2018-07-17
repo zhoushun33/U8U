@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="UTF-8">
+		<title></title>
+	
+	</head>
+	
+	<header></header>
+	　
+	<style>
+	
+		　
+	
+        fieldset{
+            background-color: #f1f1f1;
+            border: none;
+            border-radius: 2px;
+            margin-bottom: 12px;
+            overflow: hidden;
+            padding: 0 .625em;
+            
+          
+        }
+        label{
+            cursor: pointer;
+            display: inline-block;
+            padding: 3px 6px;
+            text-align: right;
+            width: 80px;
+            vertical-align: top;
+        }
+
+        input{
+            font-size: inherit;
+        }
+  </style>
+	
+	<header>
+			 
+			
+		</header>
+	<body  align="center">
+		
+	<div>
+		<fieldset>
+			<legend>个人资料</legend>
+			<p>
+	
+	  <label for="当前头像" >当前头像：</label>		
+	<img src="../image/tx.png" alt="" /><br /></p>
+	
+	 <p> <label for="呢称" >呢称：</label>
+	<input type="text"><br /></p>
+	
+	       <p><label for="真实姓名" >真实姓名：</label>
+	   <input type="text"></p>
+	
+    <label>性别:</label>
+    
+    <input type="radio" value="1"  name="gender" />男
+    
+    <input type="radio" value="2"  name="gender" />女
+
+
+     <p> <label for="真实姓名" >联系电话：</label>
+ <input type="text"><br /></p>
+             
+      <p><label for="真实姓名" >居住地址：</label>
+     <input type="text">  </p>
+ 
+  
+  <script type="text/javascript" src="birth.js"></script>
+
+<tr><td>出生年份：</td><td>
+  <select size="1" name="year" id="year" style="width:60px" onfocus="years('year',new Date().getFullYear()),change_date()" onchange="change_date()"></select>&nbsp;
+  <select size="1" name="month" id="month" style="width:50px" onfocus="months(),change_date()" onchange="change_date()"></select>&nbsp;
+  <select size="1" name="date" id="date" style="width:40px" ></select>
+</td></tr>
+  <div style="text-align:center"><br />
+  <input type="submit" value="保存" />
+  <input type="reset" value="重置" />  
+  </fieldset>
+
+  </div>
+	
+	
+	
+	
+	
+	
+	</body>
+</html>

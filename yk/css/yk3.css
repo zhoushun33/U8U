@@ -1,0 +1,159 @@
+.top-left {
+	float: left;
+	width: 200px;
+	color: mediumblue;
+}
+
+.top-left p {
+	font-size: 60px;
+	margin-left: 70px;
+	position: relative;
+	left: 70px;
+	top: -60px;
+}
+
+.top-left a {
+	font-size: 28px;
+	position: relative;
+	left: 220px;
+	top: -160px;
+	text-decoration: none;
+	list-style-type: none;
+	color: #000000;
+}
+
+.top-left a:hover {
+	color: orange;
+}
+
+#aaa {
+	position: absolute;
+	left: 750px;
+	top: 28px;
+	width: 520px;
+	height: 45px;
+	padding: 0;
+	border: 5px solid dimgrey;
+}
+
+.inp {
+	float: left;
+	display: inline;
+	padding: 10px;
+	font-size: 18px;
+	width: 504px;
+	border: none;
+	color: #999;
+}
+
+.inp:focus,
+.but:focus {
+	outline: none;
+}
+
+.but {
+	position: absolute;
+	top: -5px;
+	left: 520px;
+	width: 112px;
+	height: 55px;
+	line-height: 55px;
+	border: none;
+	background-color: dimgrey;
+	color: white;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	cursor: pointer;
+}
+
+hr{
+	position: absolute;
+	top: 100px;
+}
+
+.imga1{
+	position: absolute;
+	top: 120px;
+	width: 70%;
+}
+
+.imga2{
+	position: relative;
+	left: -1px;
+	top: 280px;
+	border: 1px solid black;
+}
+.box19{
+	position: absolute;
+	left: 690px;
+	top: 320px;
+	font-size:18px ;
+	font-weight: bold;
+}
+.box19 p{
+	margin-top: 5px;
+	font-size:15px ;
+	color: red;
+}
+
+.imga3{
+	position: absolute;
+	left:680px;
+	top: 390px;
+	width: 580px;
+	height: 560px;
+}
+.imga4{
+	position: absolute;
+	top: 740px;
+	left: 150px;
+	height: 480px;
+	z-index: -1;
+	width: 500px;
+}
+.imga5{
+	position: absolute;
+	top: 960px;
+	left: 240px;
+	height: 480px;
+	z-index: -1;
+	width: 900px;
+}
+.imga6{
+	position: absolute;
+	top: 1460px;
+	left: 240px;
+	height: 780px;
+	z-index: -1;
+	width: 900px;
+}
+
+.imga7{
+	position: absolute;
+	top: 2210px;
+	left: 240px;
+	height: 780px;
+	z-index: -1;
+	width: 900px;
+}
+.imga8{
+	position: absolute;
+	top: 2810px;
+	left: 240px;
+	height: 780px;
+	z-index: -1;
+	width: 900px;
+}
+.niu{
+	height: 33px;
+	width: 196px;
+	background-color: red;
+	position: absolute;
+	left: 981px;
+	top: 888px;
+	z-index: 2;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 10px;
+}
