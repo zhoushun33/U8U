@@ -1,0 +1,118 @@
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: whitesmoke;
+}
+.tou{
+	margin-bottom:;
+	width: 100%;
+	background: whitesmoke;
+	height: 20%;
+}
+.nk{
+	margin: auto;
+	width: 75%;
+	background: white;
+}
+.nk_0{
+	border: 1px solid #CCCCCC;
+	background: beige;
+	width: 130px;
+	height: 25px;
+}
+.nk_1{
+	border: 1px solid #CCCCCC;
+	background: white;
+	width: 99%;
+	height: 76px;
+	margin-top: 5px;
+}
+.nk_2{
+	border: 2px solid #CCCCCC;
+	background: beige;
+	width: 99%;
+	margin-top: 10px;
+	height: 370px;
+}
+.nk_2_1{
+	background: beige;
+	width: 100%;
+	height: 150px;
+}
+.nk_2_2{
+	background: white;
+	width: 100%;
+	height: 40px;
+	margin-top: 180px;
+}
+.nk_3{
+	border: 1px solid #CCCCCC;
+	background: beige;
+	width: 99%;
+	height: 30px;
+	margin-top: 10px;
+}
+.nk_2_1_3{
+	position: absolute;
+	margin-top: 120px;
+	margin-left: 10px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.tijiao{
+	width: 70px;
+    height: 30px;
+    color: #fff;
+    background: #e22;
+    border: 0;
+    font-size: 12px;
+    font-family: "Microsoft YaHei","Hiragino Sans GB";
+    position: absolute;
+    margin-top: 115px;
+	margin-left: 67%;
+}
+.nk_1_1{
+	line-height: 1.8em;
+}
+.nk_2_1_0{
+	width: 100%;
+	height: 40px;
+}
+.nk_2_1_1{
+	width: 100%;
+	height: 100px;
+}
+.nk_2_1_2{
+	width: 100%;
+	height: 40px;
+	margin-top: 30px;
+}
+.nk_2_1_0_0{
+	position: absolute;
+	margin-top: 5px;
+	margin-left: 2px;
+}
+.nk_2_1_2_0{
+	margin-top: 10px;
+	margin-left: 2px;
+}
+.nk_2_1_1_0{
+	margin-top: 10px;
+	margin-left: 2px;
+}
+.nk_3_1{
+	margin-top: 5px;
+}
+td{
+	border-bottom: 1px solid #CCCCCC;
+	padding:10px;
+}
+.nk_4{
+	margin: 5px;
+}

@@ -1,0 +1,123 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+/*头部*/
+.head{
+	width: 100%;
+	height: 100px;
+	background-color: #f7e6e6;
+	text-align: center;
+}
+.head h2{
+	margin: 0;
+	font-weight: 400px;
+}
+/*导航条*/
+.nav{
+	margin: auto;
+	margin-top: 10;
+    width: 70%;
+    border: 1px solid #d8d8d8;
+}
+.nav a{
+	padding: 0 15px;
+    border-right: 1px solid;
+}
+.nav ul{
+	display: flex;
+	flex-wrap: start-flex; 
+}
+/*中部*/
+.body{
+	width: 100%;
+	font-size: 12px;
+	margin-top: 10px;
+}
+.box_center{
+	margin: auto;
+	width: 70%;
+	border: 1px solid #d8d8d8;
+	position: relative;
+}
+.box_center li{
+	width: 200px;
+    height: 181px;
+    position: relative;
+    margin-bottom: 12px;
+}
+.box_center li img{
+	width: 100%;
+	height:150px;
+	position: relative;
+}
+.box_center img:hover{
+	cursor: pointer;
+}
+.box_center p{
+	margin: 0;
+    height: 34px;
+    overflow: hidden;
+}
+.abso{
+	right: 0;
+	bottom: 30;
+	position: absolute;
+	color: red;
+	font-size: 24px;
+}
+.none_block{
+	position: absolute;
+    bottom: 90px;
+    left: 28px;
+    color: green;
+    font-size: 22px;
+    display: none;
+}
+.box_center ul{
+	margin: 10px 0 0 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.box_footer{
+	text-align: center;
+	margin: 10 0;
+}
+.box_footer a{
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid;
+	display: inline-block;
+}
+/*右边的结算栏*/
+.flexed{
+	position: fixed;
+	bottom: 10px;
+	width: 10%;	
+	height: 70px;
+}
+
+.flexed_left{
+	left: 0;
+}
+.flexed_right{	
+	right: 0;	
+}
+.flexed_left span ,.flexed_right span{
+	display: inline-block;
+	width: 100%;
+	background-color: red;
+	color: yellow;
+	text-align: center;
+	line-height: 70px;
+	font-size: 15px;
+}

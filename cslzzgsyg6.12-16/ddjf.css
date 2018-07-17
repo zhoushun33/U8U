@@ -1,0 +1,100 @@
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: whitesmoke;
+}
+/*.you{
+	float:left;
+	width: 12.5%;
+	background: #CCFFFF;
+	height: 150%;
+}
+.zuo{
+	float:right;
+	width: 12.5%;
+	background: #CCFFFF;
+	height: 150%;
+}*/
+.tou{
+	margin-bottom:;
+	width: 100%;
+	background: whitesmoke;
+	height: 20%;
+}
+.nk{
+	margin: auto;
+	width: 75%;
+	height: 150%;
+	background: white;
+}
+.a{
+	padding-top: 50px;
+	padding-left: 20px;
+}
+span{
+	font-weight: bold;
+}
+table{
+	border: 1px solid #999999;
+	width: 100%;
+
+}
+th{
+	border-right: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	text-align: center;
+	height:30px;
+	background: #CCCCFF;
+}
+td{
+	border-right: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	text-align: center;
+}
+table{
+	width: 100%;
+}
+.b{
+	padding-top: 20px;
+	padding-left: 40px;
+	padding-right: 5px;
+}
+img{
+	width: 70px;
+	height: 50px;
+}
+.baby_left{
+	padding-left: 30%;
+}
+.baby_right{
+	padding-top: 10px;
+}
+.d{
+	line-height: 1em;
+	font-weight: bold;
+	font-size:12px;
+	float: left;
+}
+.e{
+	border: 1px solid red;
+	height: 250px;
+	margin-top: 150px;
+	margin-left: 20px;
+	margin-right: 20px;
+	overflow: auto;
+	overflow-y: auto;
+}
+.f{
+	margin-left: 120px;
+	margin-top: 50px;
+}
+.g{
+	margin-left: 430px;
+	margin-top: 10px;
+}

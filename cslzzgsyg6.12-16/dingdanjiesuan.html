@@ -1,0 +1,142 @@
+<!doctype>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>订单结算</title>
+		<link rel="stylesheet" href="./dingdanjiesuan.css">
+	</head>
+	<body>
+		<div class="head">
+			<p>
+				订单管理
+			</p>
+			<div class="head_right">
+				<span>
+					<a href="">
+						问题反馈
+					</a>
+				</span>
+				<span>
+					<a href="">
+						客服中心
+					</a>
+				</span>
+			</div>
+		</div>
+
+		<div class="center">
+			<div class="center_head">
+				<a href="./dingdanluru.html">
+					<span class="center_head_left">
+						返回选购界面
+					</span>
+				</a>
+				<span class="center_head_right">
+						<strong>总金额：<span id="all_money">0</span>元</strong>
+				</span>
+			</div>
+			
+			<div class="center_center">
+				<div class="center_center_list">
+					<ul style="padding: 0">
+						<li>
+							<table>
+								<tr>
+									<th></th>
+									<th></th>
+									<th>商品信息</th>
+									<th>商品数量</th>
+									<th>小计</th>
+								</tr>
+								<tr>
+									<td style="width: 5%;text-align: center;">
+										<input type="checkbox" id="select_1">
+									</td> 
+									<td style="width: 15%">
+										<img src="./image/1.jpg" alt="xxx">
+									</td>
+									<td style="width: 45%">
+										<table>
+											<tr>
+												<td>
+													测试模板样图大大的测试模板样图大大的测试模板样图大大的
+												</td>
+											</tr>
+											<tr>
+												<td id="one_money" style="color: red">
+													价格：50元
+												</td>
+											</tr>
+										</table>
+									</td>
+									<td class="add" style="width: 20%;text-align: center;">
+										<span id="down">-</span>
+										<span><input type="text" class="add_input" name="" id="number" value="1"></span>
+										<span id="add">+</span>
+									</td>
+									<td id="small_money" style="width: 38%;color: red;text-align: center;">
+										50元
+									</td>
+								</tr>
+							</table>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="center_footer">
+				<div class="get_people" style="margin-left: 2%">
+					<p><strong>寄送至：</strong><span>广东省中山市中山公园</span></p>
+					<p><strong>收件人：</strong><span>老鸽</span></p>
+					<p><strong>联系号码：</strong><span>10086</span></p>
+					<p>地址不对？点击<strong><a href="" style="color: #ed0d0d">修改地址</a></strong></p>
+				</div>
+				<div class="submit">
+					<a href="./ddsk.html"><p>提交订单</p></a>
+				</div>
+			</div>
+		</div>
+		<script>
+			var select_1=document.getElementById('select_1');
+			var all_money=document.getElementById('all_money');
+			var one_money=document.getElementById('one_money');
+			var small_money=document.getElementById('small_money');
+			var down=document.getElementById('down');
+			var add=document.getElementById('add');
+			var number=document.getElementById('number');
+			function text_1(){
+				var sum=++number.value;
+			 	var o_money=one_money.innerText.toString().replace(/[^0-9]/ig,"")*sum;
+				small_money.innerText=o_money+'元';
+				if(select_1.checked==true){
+				 	all_money.innerText=o_money;
+				}else{
+					all_money.innerText=0;
+				} 	
+			}
+			down.addEventListener('click',text_1);
+			add.addEventListener('click',text_1);
+			select_1.addEventListener('click',function(){
+			 	var sum=number.value;
+			 	var o_money=one_money.innerText.toString().replace(/[^0-9]/ig,"")*sum;
+				small_money.innerText=o_money+'元';
+				if(select_1.checked==true){
+				 	all_money.innerText=o_money;
+				}else{
+					all_money.innerText=0;
+				} 	
+			});
+			number.addEventListener('input',function(){
+				var o_money=one_money.innerText.toString().replace(/[^0-9]/ig,"")*number.value;
+				small_money.innerText=o_money+'元';
+			 	if(select_1.checked==true){
+				 	all_money.innerText=o_money;
+				}else{
+					all_money.innerText=0;
+				}
+
+			})
+			 
+		</script>
+	</body>
+</html>

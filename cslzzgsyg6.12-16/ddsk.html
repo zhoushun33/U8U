@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="ddsk.css" rel="stylesheet" type="text/css"  />
+	</head>
+	<body>
+		<div class="nk_1">
+			<div class="nk_1_1">
+				<h2 style="margin-top: 0;">收银付款界面</h2>
+			</div>
+			<div class="nk_1_2">
+				<span>欢迎您!</span>
+				<span style="color: red">老鸽</span>
+				<a href="">[退出]</a>
+				<span>订单查询</span>
+			</div>
+		</div>
+		<div class="tx"><img src="image/b03c35202775174b2932230e0438f75c_t01cd874709bdd60550.png" style="height: 20px;;"><span style="font-weight: bold;font-size: 20px;">您的订单已经提交成功，请尽快付款！</span></div>
+		<div class="nk_2">
+			<div class="nk_2_1">
+				<span style="font-weight: bold;">订单号：xxxxxxxxxxxxxxxxxx</span><span style="margin-left: 50px;font-weight: bold;" >商品数量：x</span>
+				<p style="font-weight: bold;">收货地址：-------------------------------(------)</p>
+			</div>
+		</div>
+	
+		<div class="nk_3">
+			<div>
+				<button id="choose_1">储蓄卡</button>
+			</div>
+			<div>
+				<button id="choose_2">微信/支付宝</button>
+			</div>
+	      <div id="swicth_1">
+	      	<div style="display: flex; flex-wrap: wrap;justify-content: space-around;" class="logo">
+	      	 <label><input name="form-field-radio" type="radio" class="ace"><span class="lbl"><img src="image/black1.png" width="160px;"/></span></label>
+	         <label><input name="form-field-radio" type="radio" class="ace"><span class="lbl"><img src="image/black2.png" width="160px;"/></span></label>
+	         <label><input name="form-field-radio" type="radio" class="ace"><span class="lbl"><img src="image/black3.png" width="160px;"/></span></label>
+	         <label><input name="form-field-radio" type="radio" class="ace"><span class="lbl"><img src="image/black4.png" width="160px;"/></span></label>
+	         <label><input name="form-field-radio" type="radio" class="ace"><span class="lbl"><img src="image/black5.png" width="160px;"/></span></label>
+	         <label><input name="form-field-radio" type="radio" class="ace"><span class="lbl"><img src="image/black6.png" width="160px;"/></span></label>
+	         <label><input name="form-field-radio" type="radio" class="ace"><span class="lbl"><img src="image/black7.png" width="160px;"/></span></label>
+	         <label><input name="form-field-radio" type="radio" class="ace"><span class="lbl"><img src="image/black8.png" width="160px;"/></span></label>
+	         <label><input name="form-field-radio" type="radio" class="ace"><span class="lbl"><img src="image/black9.png" width="160px;"/></span></label>
+	         <label><input name="form-field-radio" type="radio" class="ace"><span class="lbl"><img src="image/black10.png" width="160px;"/></span></label>
+	         <label><input name="form-field-radio" type="radio" class="ace"><span class="lbl"><img src="image/black11.png" width="160px;"/></span></label>
+	         <label><input name="form-field-radio" type="radio" class="ace"><span class="lbl"><img src="image/black12.png" width="160px;"/></span></label>
+	         <label><input name="form-field-radio" type="radio" class="ace"><span class="lbl"><img src="image/black13.png" width="160px;"/></span></label>
+	         <label><input name="form-field-radio" type="radio" class="ace"><span class="lbl"><img src="image/black14.png" width="160px;"/></span></label>
+	         <label><input name="form-field-radio" type="radio" class="ace"><span class="lbl"><img src="image/black15.png" width="160px;"/></span></label>   
+	         </div>
+	      </div>  
+	      <div id="swicth_2" style="display: none;">
+	      	<div style="display: flex; flex-wrap: wrap;justify-content: space-around;" class="logo">
+	      	 	<label><input name="form-field-radio" type="radio" class="ace"><span class="lbl"><img src="image/zhifubao.png" width="120px;"/></span></label>
+	         	<label><input name="form-field-radio" type="radio" class="ace"><span class="lbl"><img src="image/weixin.png" width="150px;"/></span></label> 		
+	      	</div>
+	      </div>
+   </div>
+      	  <div style="margin-left: 12%;"><span style="font-size: 12px;margin-left: 15px;">商品应付价格:</span><span style="font-weight: bold;color: red;font-size: 25px;">￥100.00</span></div>
+		  <a href="./ddjf.html"><button class="Push_button" <!-- onclick="push() -->">立即付款</button> </a> 	
+	</body>
+	<script type="text/javascript">
+		var label=document.getElementsByTagName('label');
+		var switch_1=document.getElementById('swicth_1');
+		var switch_2=document.getElementById('swicth_2');
+		for(i=0;i<label.length;i++){
+			label[i].style.display='flex';
+			label[i].style.alignItems='center';
+			label[i].style.marginRight='10px';
+		}
+		var a=document.getElementById("choose_1");
+		var b=document.getElementById("choose_2")
+		a.addEventListener('click',function(){
+			a.style.backgroundColor='white';
+			switch_1.style.display='block';
+			switch_2.style.display='none';
+			b.style.backgroundColor='silver';
+		})
+		b.addEventListener('click',function(){
+			b.style.backgroundColor='white';
+			switch_1.style.display='none';
+			switch_2.style.display='block';
+			a.style.backgroundColor='silver';
+		})
+		// function push(){
+		// 	prompt("请确认订单无误后输入付款密码：");
+		// }
+	</script>
+</html>
